@@ -1,0 +1,25 @@
+package factorial;
+import java.util.*;
+
+public class factor {
+
+	public static void Main(String[] args) {
+		// TODO Auto-generated method stub
+int n;
+do{
+	try{
+	Scanner sc = new Scanner (System.in);
+	System.out.println("Ведите число n:");
+	n = sc.nextInt();
+	int result = 1;
+	for (int i = 2; i<= n; i++) 
+		result *= i;
+	System.out.println(result);
+	if (n == 0 || n == 1)
+		System.out.println(result);
+	if (n < 1)
+		System.out.println("не правильный ввод");
+	}catch(Exception e) {}
+	}while (true);
+}
+}
